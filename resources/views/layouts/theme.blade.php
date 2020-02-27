@@ -9,6 +9,8 @@
     <title>Kogalo</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Bootstrap core CSS     -->
     <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
@@ -23,13 +25,14 @@
 </head>
 
 <body>
-<div class="wrapper">
-    @include('layouts._includes._sidebar')
+<div class="wrapper" id="app">
+    <layout-component></layout-component>
+   {{-- @include('layouts._includes._sidebar')
     <div class="main-panel">
         @include('layouts._includes._header')
         @yield('content')
         @include('layouts._includes._footer')
-    </div>
+    </div>--}}
 </div>
 </body>
 <!--   Core JS Files   -->
@@ -82,12 +85,6 @@
 <script src="{{asset('assets/js/charts/flot-charts.js')}}"></script>
 <script src="{{asset('assets/js/charts/chartjs-charts.js')}}"></script>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        // Javascript method's body can be found in assets/js/demos.js
-        demo.initVectorMap();
-    });
-</script>
+<script src="{{asset('js/app.js')}}"></script>
 
 </html>
