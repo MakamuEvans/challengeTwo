@@ -2,11 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="368063af-d466-46bd-826d-af332a52d151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/turbo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/faces/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/AU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/BR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/GB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/RO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/flags/US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/image_placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/listing-placeholder-330x220.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/logo_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/product-image-120x120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/signup-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/charts/chartjs-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/charts/flot-charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/turbo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/chartjs/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/flot/jquery.flot.categories.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/charts/flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/dropzone/dropzone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/dropzone/dropzone.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jasny-bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery-jvectormap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery-ui-1.12.0/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery-ui-1.12.0/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery.bootstrap-wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery.datatables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery.select-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery.tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.ttf@v=2.2.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff2@v=2.2.0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff@v=2.2.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/material.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/perfect-scrollbar.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vendors/sweetalert2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_includes/_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_includes/_header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_includes/_sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/theme.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/soluTech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/soluTech.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +97,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,21 +189,37 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YNkJHryS1htd0nORO7P6WtQM9Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -154,11 +249,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582790365727</updated>
-      <workItem from="1582790369349" duration="1091000" />
+      <workItem from="1582790369349" duration="2055000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
