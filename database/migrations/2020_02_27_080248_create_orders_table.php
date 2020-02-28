@@ -15,7 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('order_number', 45);
+            $table->string('order_number', 45)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

@@ -14,84 +14,18 @@
                                     <thead>
                                     <tr>
                                         <th class="text-center">#</th>
-                                        <th>Name</th>
-                                        <th>Job Position</th>
-                                        <th>Since</th>
-                                        <th class="text-right">Salary</th>
+                                        <th>Supplier Name</th>
+                                        <th>Status</th>
+                                        <th class="text-right">Created On</th>
                                         <th class="text-right">Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td>Andrew Mike</td>
-                                        <td>Develop</td>
-                                        <td>2013</td>
-                                        <td class="text-right">&euro; 99,225</td>
-                                        <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">2</td>
-                                        <td>John Doe</td>
-                                        <td>Design</td>
-                                        <td>2012</td>
-                                        <td class="text-right">&euro; 89,241</td>
-                                        <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">3</td>
-                                        <td>Alex Mike</td>
-                                        <td>Design</td>
-                                        <td>2010</td>
-                                        <td class="text-right">&euro; 92,144</td>
-                                        <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">4</td>
-                                        <td>Mike Monday</td>
-                                        <td>Marketing</td>
-                                        <td>2013</td>
-                                        <td class="text-right">&euro; 49,990</td>
-                                        <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">5</td>
-                                        <td>Paul Dickens</td>
-                                        <td>Communication</td>
-                                        <td>2015</td>
-                                        <td class="text-right">&euro; 69,201</td>
+                                    <tr v-for="supplier in suppliers">
+                                        <td class="text-center">{{supplier.id}}</td>
+                                        <td>{{supplier.name}}</td>
+                                        <td>{{supplier.status}}</td>
+                                        <td class="text-right">&euro{{supplier.created_at}}</td>
                                         <td class="td-actions text-right">
 
                                             <button type="button" rel="tooltip" class="btn btn-success btn-simple">
@@ -115,7 +49,24 @@
 
 <script>
     export default {
-        name: "SupplierList"
+        name: "SupplierList",
+        mounted() {
+            this.getSuppliers();
+        },
+        data() {
+            return {
+                suppliers: []
+            }
+        },
+        methods: {
+            getSuppliers() {
+                let vm = this;
+                axios.get('/suppliers')
+                    .then(response => {
+                        vm.suppliers = response.data.data;
+                    })
+            }
+        }
     }
 </script>
 

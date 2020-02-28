@@ -13,7 +13,7 @@
                                 <div class="col-sm-10">
                                     <div class="form-group label-floating is-empty" style="margin: 0px">
                                         <label class="control-label"></label>
-                                        <input type="text" class="form-control" value>
+                                        <input type="text" class="form-control" v-model="name">
                                         <span class="help-block">Enter supplier Name</span>
                                     </div>
                                 </div>
@@ -22,7 +22,7 @@
                                 <label class="col-sm-2 label-on-left"></label>
                                 <div class="col-sm-10">
                                     <div class="form-group label-floating is-empty" style="margin: 0px">
-                                        <button class="btn btn-primary">Save</button>
+                                        <button @click="save()" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,21 @@
 
 <script>
     export default {
-        name: "NewSupplier"
+        name: "NewSupplier",
+        data(){
+            return {
+                name: '',
+            }
+        },
+        methods:{
+            save(){
+                let vm = this;
+                axios.post('/suppliers', {name: vm.name})
+                .then(response=>{
+                    vm.$router.push({name: 'suppliers'})
+                })
+            }
+        }
     }
 </script>
 

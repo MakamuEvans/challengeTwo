@@ -1,32 +1,25 @@
 <template>
-
     <div class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <router-link :to="{name: 'add-product'}">
-                        <button class="btn btn-primary">Add Product</button>
-                    </router-link>
                     <div class="card">
                         <div class="card-content">
-                            <h4 class="card-title">Products</h4>
+                            <h4 class="card-title">Order #{{order.id}}</h4>
+                            <new-order-product></new-order-product>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <th class="text-center">#</th>
-                                        <th>Name</th>
-                                        <th>Description</th>
-                                        <th>Quantity</th>
+                                        <th>Product</th>
+                                        <th>Date Added</th>
                                         <th class="text-right">Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr v-for="product in products">
-                                        <td class="text-center">{{product.id}}</td>
-                                        <td>{{product.name}}</td>
-                                        <td>{{product.description}}</td>
-                                        <td>{{product.quantity}}</td>
+                                    <tr>
+                                        <td>Andrew Mike</td>
+                                        <td>Develop</td>
                                         <td class="td-actions text-right">
 
                                             <button type="button" rel="tooltip" class="btn btn-success btn-simple">
@@ -49,25 +42,33 @@
 </template>
 
 <script>
+    import NewOrderProduct from "./NewOrderProduct";
     export default {
-        name: "ProductList",
+        name: "NewOrder",
         mounted() {
-            this.getProducts();
+            this.createOrder();
+        },
+        components: {
+            NewOrderProduct
         },
         data() {
             return {
-                products: []
+                order: {},
             }
         },
         methods: {
-            getProducts() {
+            createOrder() {
                 let vm = this;
-                axios.get('/products')
+                axios.post('/orders')
                     .then(response => {
-                        vm.products = response.data.data;
+                        vm.order = response.data.data;
                     })
+            },
+            addProduct(){
+                this.$root.$emit('toggleModal', true);
             }
         }
+
     }
 </script>
 
