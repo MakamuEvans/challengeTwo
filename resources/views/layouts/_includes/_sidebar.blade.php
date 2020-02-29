@@ -13,19 +13,19 @@
         <ul class="nav">
             <li class="active">
                 <a href="index.html">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">dns</i>
                     <p>Suppliers</p>
                 </a>
             </li>
             <li class="active">
                 <a href="index.html">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">loyalty</i>
                     <p>Products</p>
                 </a>
             </li>
             <li class="active">
                 <a href="index.html">
-                    <i class="material-icons">dashboard</i>
+                    <i class="material-icons">shopping_cart</i>
                     <p>Orders</p>
                 </a>
             </li>

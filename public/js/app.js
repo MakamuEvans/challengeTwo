@@ -2926,8 +2926,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SupplierList",
   mounted: function mounted() {
@@ -24980,8 +24978,6 @@ var render = function() {
                           _vm._v(" "),
                           _c("td", [_vm._v(_vm._s(supplier.name))]),
                           _vm._v(" "),
-                          _c("td", [_vm._v(_vm._s(supplier.status))]),
-                          _vm._v(" "),
                           _c("td", { staticClass: "text-right" }, [
                             _vm._v(_vm._s(supplier.created_at))
                           ]),
@@ -25063,8 +25059,6 @@ var staticRenderFns = [
         _c("th", { staticClass: "text-center" }, [_vm._v("#")]),
         _vm._v(" "),
         _c("th", [_vm._v("Supplier Name")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Status")]),
         _vm._v(" "),
         _c("th", { staticClass: "text-right" }, [_vm._v("Created On")]),
         _vm._v(" "),

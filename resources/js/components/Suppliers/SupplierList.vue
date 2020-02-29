@@ -15,7 +15,6 @@
                                     <tr>
                                         <th class="text-center">#</th>
                                         <th>Supplier Name</th>
-                                        <th>Status</th>
                                         <th class="text-right">Created On</th>
                                         <th class="text-right">Actions</th>
                                     </tr>
@@ -24,7 +23,6 @@
                                     <tr v-for="supplier in suppliers">
                                         <td class="text-center">{{supplier.id}}</td>
                                         <td>{{supplier.name}}</td>
-                                        <td>{{supplier.status}}</td>
                                         <td class="text-right">{{supplier.created_at}}</td>
                                         <td class="td-actions text-right">
                                             <router-link :to="{name: 'edit-supplier', params: {id: supplier.id} }">

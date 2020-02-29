@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="368063af-d466-46bd-826d-af332a52d151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderDetailsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Orders/EditOrder.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Products/EditProduct.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Suppliers/EditSupplier.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateOrderTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateProductTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/CreateSupplierTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuppliersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuppliersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/OrderDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/OrderDetail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/NewOrder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/NewOrder.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/NewOrderProduct.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/NewOrderProduct.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/OrderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/OrderList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ProductSupplier/ProductSupplierList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ProductSupplier/ProductSupplierList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Products/ProductList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Products/ProductList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Suppliers/SupplierList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Suppliers/SupplierList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_includes/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_includes/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/theme.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/theme.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +196,7 @@
       <workItem from="1582790369349" duration="6157000" />
       <workItem from="1582888004514" duration="5791000" />
       <workItem from="1582974104087" duration="3059000" />
-      <workItem from="1583003823161" duration="6701000" />
+      <workItem from="1583003823161" duration="8500000" />
     </task>
     <servers />
   </component>
@@ -211,6 +207,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="378" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583012717067">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="378" y="142" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1280.716@0.23.1280.716" timestamp="1583012717067" />
     <state x="319" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1583003842413">
       <screen x="0" y="23" width="1280" height="715" />
     </state>

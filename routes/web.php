@@ -18,11 +18,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/suppliers', 'SuppliersController');
-Route::resource('/products', 'ProductsController');
-Route::resource('/product-suppliers', 'ProductSuppliersController');
-Route::resource('/orders', 'OrdersController');
-Route::resource('/order-product', 'OrderDetailsController');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function () {
+        return view('layouts.theme');
+    })->name('index');
+    Route::resource('/suppliers', 'SuppliersController');
+    Route::resource('/products', 'ProductsController');
+    Route::resource('/product-suppliers', 'ProductSuppliersController');
+    Route::resource('/orders', 'OrdersController');
+    Route::resource('/order-product', 'OrderDetailsController');
+});
 
 Route::fallback(function() {
     return redirect()->route('index');
