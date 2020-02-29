@@ -25,6 +25,12 @@
                     </router-link>
                 </li>
                 <li>
+                    <router-link :to="{name: 'product-suppliers'}">
+                        <i class="material-icons">dashboard</i>
+                        <p>Product Supplier</p>
+                    </router-link>
+                </li>
+                <li>
                     <router-link :to="{name: 'orders'}">
                         <i class="material-icons">dashboard</i>
                         <p>Orders</p>
