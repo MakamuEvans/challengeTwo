@@ -28,11 +28,12 @@
                                         <td>{{product.description}}</td>
                                         <td>{{product.quantity}}</td>
                                         <td class="td-actions text-right">
-
+                                            <router-link :to="{name: 'edit-product', params: {id: product.id} }">
                                             <button type="button" rel="tooltip" class="btn btn-success btn-simple">
                                                 <i class="material-icons">edit</i>
                                             </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                            </router-link>
+                                            <button @click="deleteProduct(product.id)" type="button" rel="tooltip" class="btn btn-danger btn-simple">
                                                 <i class="material-icons">close</i>
                                             </button>
                                         </td>
@@ -65,6 +66,13 @@
                 axios.get('/products')
                     .then(response => {
                         vm.products = response.data.data;
+                    })
+            },
+            deleteProduct(id){
+                let vm = this;
+                axios.post('/products/'+ id, {_method: 'DELETE'})
+                    .then(response=>{
+                        vm.getProducts();
                     })
             }
         }

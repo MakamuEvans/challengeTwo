@@ -25,13 +25,14 @@
                                         <td class="text-center">{{supplier.id}}</td>
                                         <td>{{supplier.name}}</td>
                                         <td>{{supplier.status}}</td>
-                                        <td class="text-right">&euro{{supplier.created_at}}</td>
+                                        <td class="text-right">{{supplier.created_at}}</td>
                                         <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                            <router-link :to="{name: 'edit-supplier', params: {id: supplier.id} }">
+                                                <button type="button" rel="tooltip" class="btn btn-success btn-simple">
+                                                    <i class="material-icons">edit</i>
+                                                </button>
+                                            </router-link>
+                                            <button @click="deleteSupplier(supplier.id)" type="button" rel="tooltip" class="btn btn-danger btn-simple">
                                                 <i class="material-icons">close</i>
                                             </button>
                                         </td>
@@ -65,6 +66,13 @@
                     .then(response => {
                         vm.suppliers = response.data.data;
                     })
+            },
+            deleteSupplier(id){
+                let vm = this;
+                axios.post('/suppliers/'+ id, {_method: 'DELETE'})
+                .then(response=>{
+                    vm.getSuppliers();
+                })
             }
         }
     }

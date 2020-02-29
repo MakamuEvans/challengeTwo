@@ -25,11 +25,12 @@
                                         <td>{{order.order_number}}</td>
                                         <td>{{order.created_at}}</td>
                                         <td class="td-actions text-right">
-
+                                            <router-link :to="{name: 'edit-order', params: {id: order.id} }">
                                             <button type="button" rel="tooltip" class="btn btn-success btn-simple">
                                                 <i class="material-icons">edit</i>
                                             </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
+                                            </router-link>
+                                            <button type="button" @click="deleteOrder(order.id)" rel="tooltip" class="btn btn-danger btn-simple">
                                                 <i class="material-icons">close</i>
                                             </button>
                                         </td>
@@ -62,6 +63,13 @@
                 axios.get('/orders')
                     .then(response => {
                         vm.orders = response.data.data;
+                    })
+            },
+            deleteOrder(id){
+                let vm = this;
+                axios.post('/orders/'+ id, {_method: 'DELETE'})
+                    .then(response=>{
+                        vm.getOrders();
                     })
             }
         }

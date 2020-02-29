@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example-modal-sm">Small modal</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".example-modal-sm">Add Product</button>
 
         <div class="modal fade example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
             <div class="modal-dialog modal-sm" role="document">
@@ -18,7 +18,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" @click="save()" class="btn btn-default">Update</button>
-                        <button type="button" class="btn btn-info" data-dismiss="modal">Close
+                        <button type="button" id="close_modal" class="btn btn-info" data-dismiss="modal">Close
                         </button>
                     </div>
 
@@ -43,7 +43,8 @@
                 showModal: false,
                 products: [],
                 order_product: {
-                    product_id: ''
+                    product_id: '',
+                    order_id: this.$route.params.id
                 }
             }
         },
@@ -59,7 +60,12 @@
                     })
             },
             save(){
-
+                let vm = this;
+                axios.post('/order-product', vm.order_product)
+                .then(response=>{
+                    document.getElementById("close_modal").click();
+                    vm.$emit('orderUpdate');
+                })
             }
         }
     }

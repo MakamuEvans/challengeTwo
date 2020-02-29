@@ -60,7 +60,8 @@ class SuppliersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $supplier = Supplier::findOrFail($id);
+        return response()->json(['status'=>true, 'data'=>$supplier]);
     }
 
     /**
@@ -72,7 +73,9 @@ class SuppliersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $supplier = Supplier::findOrFail($id);
+        $supplier->update($request->all());
+        return response()->json(['status'=>true, 'data'=>$request->al]);
     }
 
     /**
@@ -83,6 +86,7 @@ class SuppliersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Supplier::destroy($id);
+        return response()->json(['status'=>true]);
     }
 }

@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('layouts.theme');
-});
+})->name('index');
 
 Auth::routes();
 
@@ -22,3 +22,8 @@ Route::resource('/suppliers', 'SuppliersController');
 Route::resource('/products', 'ProductsController');
 Route::resource('/product-suppliers', 'ProductSuppliersController');
 Route::resource('/orders', 'OrdersController');
+Route::resource('/order-product', 'OrderDetailsController');
+
+Route::fallback(function() {
+    return redirect()->route('index');
+});

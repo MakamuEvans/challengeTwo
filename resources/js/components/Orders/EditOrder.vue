@@ -13,22 +13,12 @@
                                     <tr>
                                         <th>Product</th>
                                         <th>Date Added</th>
-                                        <th class="text-right">Actions</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>Andrew Mike</td>
-                                        <td>Develop</td>
-                                        <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
-                                            <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
+                                    <tr v-for="detail in order.order_details">
+                                        <td>{{detail.product.name}}</td>
+                                        <td>{{detail.created_at}}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -44,9 +34,9 @@
 <script>
     import NewOrderProduct from "./NewOrderProduct";
     export default {
-        name: "NewOrder",
+        name: "EditOrder",
         mounted() {
-            this.createOrder();
+            this.fetchOrder();
             this.$on('orderUpdate', ()=>{
                 this.fetchOrder();
             })
@@ -56,20 +46,10 @@
         },
         data() {
             return {
-                order: {},
+                order: [],
             }
         },
         methods: {
-            createOrder() {
-                let vm = this;
-                axios.post('/orders')
-                    .then(response => {
-                        vm.order = response.data.data;
-                    })
-            },
-            addProduct(){
-                this.$root.$emit('toggleModal', true);
-            },
             fetchOrder() {
                 let vm = this;
                 axios.get('/orders/'+vm.$route.params.id)
@@ -77,6 +57,9 @@
                         vm.order = response.data.data;
                     })
             },
+            addProduct(){
+                this.$root.$emit('toggleModal', true);
+            }
         }
 
     }

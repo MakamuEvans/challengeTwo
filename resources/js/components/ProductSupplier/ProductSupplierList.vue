@@ -28,10 +28,6 @@
                                         <td>{{item.supplier.name}}</td>
                                         <td>{{item.created_at}}</td>
                                         <td class="td-actions text-right">
-
-                                            <button type="button" rel="tooltip" class="btn btn-success btn-simple">
-                                                <i class="material-icons">edit</i>
-                                            </button>
                                             <button type="button" rel="tooltip" class="btn btn-danger btn-simple">
                                                 <i class="material-icons">close</i>
                                             </button>

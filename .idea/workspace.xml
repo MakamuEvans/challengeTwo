@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="368063af-d466-46bd-826d-af332a52d151" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductSuppliersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ProductSupplier/NewProductSupplier.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ProductSupplier/ProductSupplierList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderDetailsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Orders/EditOrder.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Products/EditProduct.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/Suppliers/EditSupplier.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/SupplierProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/SupplierProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SuppliersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SuppliersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/OrderDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/OrderDetail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/includes/SidebarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/includes/SidebarComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/NewOrder.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/NewOrder.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/NewOrderProduct.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/NewOrderProduct.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Orders/OrderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Orders/OrderList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ProductSupplier/ProductSupplierList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ProductSupplier/ProductSupplierList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Products/ProductList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Products/ProductList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Suppliers/SupplierList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Suppliers/SupplierList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -142,7 +151,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components/Orders" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -153,9 +162,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/components/Orders" />
+      <recent name="$PROJECT_DIR$/resources/js/components/Products" />
+      <recent name="$PROJECT_DIR$/resources/js/components/Suppliers" />
       <recent name="$PROJECT_DIR$/resources/js/components" />
       <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,7 +199,8 @@
       <updated>1582790365727</updated>
       <workItem from="1582790369349" duration="6157000" />
       <workItem from="1582888004514" duration="5791000" />
-      <workItem from="1582974104087" duration="2909000" />
+      <workItem from="1582974104087" duration="3059000" />
+      <workItem from="1583003823161" duration="6701000" />
     </task>
     <servers />
   </component>
@@ -199,9 +211,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="319" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1582974135502">
+    <state x="319" y="213" key="com.intellij.ide.util.TipDialog" timestamp="1583003842413">
       <screen x="0" y="23" width="1280" height="715" />
     </state>
-    <state x="319" y="213" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1582974135502" />
+    <state x="319" y="213" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1583003842413" />
   </component>
 </project>
